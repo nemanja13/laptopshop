@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
 *{
-    box-sizing: border-box; 
+    box-sizing: border-box !important; 
     padding: 0px;
     margin: 0px;
 }
@@ -10,6 +10,9 @@ body{
 a:hover{
     color: white;
     text-decoration: none; 
+}
+.meni{
+    padding: 0px !important;
 }
 .position{
     top: 50% !important;
@@ -39,13 +42,16 @@ a:hover{
     font-size: 22px;
     line-height: 1.7;
 }
-.modali a:hover{
+.modali a:hover, .dmeni a:hover{
     color: #0d47a1;
 }
 .naslov{
     bottom: 30%;
     left: 10%;
     line-height: 1.7;
+}
+.footer{
+    margin-bottom: 0px;
 }
 @media screen and (max-width: 740px){
     .modali{
@@ -63,5 +69,8 @@ a:hover{
     .naslov{
         bottom: 20%;
         left: 0%;
+    }
+    .logo{
+        width: 70%;
     }
 }
