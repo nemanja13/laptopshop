@@ -1,9 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 	<urlset xmlns="http://www.sitmaps.org/schemas/sitemap/0.9">
 		<url>
-			<loc>https://laptopshop.000webhostapp.com/</loc>
-			<lastmod>2019-5-24</lastmod>
+			<loc>https://nemanja13.github.io/laptopshop/index.html</loc>
+			<lastmod>2019-6-13</lastmod>
 			<changefreq>weekly</changefreq>
 			<priority>1</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/asus.html</loc>
+			<lastmod>2019-6-13</lastmod>
+			<changefreq>monthly</changefreq>
+			<priority>0.8</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/dell.html</loc>
+			<lastmod>2019-6-13</lastmod>
+			<changefreq>monthly</changefreq>
+			<priority>0.8</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/hp.html</loc>
+			<lastmod>2019-6-13</lastmod>
+			<changefreq>monthly</changefreq>
+			<priority>0.8</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/kontakt.html</loc>
+			<lastmod>2019-6-13</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.6</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/oAutoru.html</loc>
+			<lastmod>2019-6-13</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.6</priority>
 		</url>
 	</urlset>
