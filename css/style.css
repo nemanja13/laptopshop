@@ -60,8 +60,8 @@ a:hover{
     #pozdell{
         background-position: right;
     }
-    #pozhp .naslov{
-        bottom: 5%;
+    .naslov{
+        bottom: 15%;
         left: 0%;
     }
 }
