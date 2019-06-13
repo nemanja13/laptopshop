@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+*{
+    box-sizing: border-box; 
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+a:hover{
+    color: white;
+    text-decoration: none; 
+}
+.position{
+    top: 50% !important;
+}
+#pozslika, #pozasus, #pozdell, #pozhp{
+    height: 400px;
+    background-image: url(../images/pozslika.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+}
+#pozasus{
+    background-image: url(../images/asus.png);
+}
+#pozdell{
+    background-image: url(../images/dell.jpeg);
+    height: 500px;
+}
+#pozhp{
+    background-image: url(../images/hp.jpg);
+}
+.modali{
+    width: 40%;
+    height: auto;
+}
+#tekst p:first-child{
+    font-size: 22px;
+    line-height: 1.7;
+}
+.modali a:hover{
+    color: #0d47a1;
+}
+.naslov{
+    bottom: 30%;
+    left: 10%;
+    line-height: 1.7;
+}
+@media screen and (max-width: 740px){
+    .modali{
+        width: 90%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 500px){
+    .position{
+        top: 25% !important;
+    }  
+    #pozdell{
+        background-position: right;
+    }
+    #pozhp .naslov{
+        bottom: 5%;
+        left: 0%;
+    }
+}
