@@ -22,7 +22,7 @@ a:hover{
     background-position: center;
 }
 #pozasus{
-    background-image: url(../images/asus.png);
+    background-image: url(../images/asus.jpg);
 }
 #pozdell{
     background-image: url(../images/dell.jpeg);
@@ -61,7 +61,7 @@ a:hover{
         background-position: right;
     }
     .naslov{
-        bottom: 15%;
+        bottom: 20%;
         left: 0%;
     }
 }
