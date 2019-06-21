@@ -78,6 +78,7 @@ a:hover{
     }
     .logo{
         width: 60%;
+        text-align: center;
     }
     .slajder{
         height: 450px !important;
