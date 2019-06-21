@@ -11,8 +11,11 @@ a:hover{
     color: white;
     text-decoration: none; 
 }
-.meni{
+.padding{
     padding: 0px !important;
+}
+.slajder{
+    height: 850px !important;
 }
 .position{
     top: 50% !important;
@@ -58,6 +61,9 @@ a:hover{
         width: 90%;
         height: auto;
     }
+    .slajder{
+        height: 650px !important;
+    }
 }
 @media screen and (max-width: 500px){
     .position{
@@ -72,5 +78,8 @@ a:hover{
     }
     .logo{
         width: 60%;
+    }
+    .slajder{
+        height: 450px !important;
     }
 }
