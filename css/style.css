@@ -51,7 +51,7 @@ a:hover{
 .modali a:hover, .dmeni a:hover{
     color: #0d47a1;
 }
-.forma input:focus, .froma textarea:focus{
+.forma input:focus, .forma textarea:focus{
     border-bottom-color:#0d47a1 !important;
     box-shadow: 0 1px 0 0 #0d47a1 !important;
 }
