@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="images/icon.ico"/> 
     <link rel="stylesheet" type="text/css" href="css/materialize.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.1/nouislider.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
@@ -52,199 +53,573 @@
                             <li><a href="oAutoru.html">O autoru</a></li>
                         </ul>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-9 mx-auto position-relative" id="pozdell">
-                <div class="col-lg-12 position-absolute white-text naslov">
-                    <h1>Posvećen ljudima,</h1><h1>Posvećen budućnosti</h1>
-                </div>
-            </div>
-        </div>   
+        </div> 
         <div class="row p-4">
             <div class="col-lg-12">
                 <h1 class="blue-text lighten-1">Laptopovi Dell</h1>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/dell1.png" alt="DELL Inspiron 14 5482 - NOT13036"/>
-                    </div>
-                    <div class="card-content">
-                        <p class="card-title activator grey-text text-darken-4">DELL Inspiron 14 5482 - NOT13036<i class="material-icons right">more_vert</i></p>
-                        <h3>RSD 99.500,00</h3>
-                        <a class="waves-effect waves-light blue lighten-1 btn white-text" href="#">Kupi</a>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">DELL Inspiron 14 5482 - NOT13036<i class="material-icons right">close</i></span>
-                        <span class="font-weight-bold">Model procesora:</span>
-                        <p>Intel&reg; Core™ i5 8265U...</p>
-                        <span class="font-weight-bold mt-2">Dijagonala ekrana:</span>
-                        <p>14&quot;</p>
-                        <span class="font-weight-bold mt-2">HDD:</span>
-                        <p>256GB SSD</p>
-                        <span class="font-weight-bold mt-2">RAM memorija:</span>
-                        <p>8GB</p>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="row">
+                        <div class="col-lg-12 d-lg-none">
+                            <ul class="collapsible">
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">list</i><span>Filteri</span></div>
+                                    <div class="collapsible-body">
+                                        <div class="col-lg-10 mx-auto border p-4 mt-2">
+                                            <h2 class="grey-text lighten-2 mb-4">Cena</h2>
+                                            <div id="slider-limit"></div>
+                                            <div class="left mt-2"><span>RSD:</span><div id="slider-limit-value-min"></div></div>
+                                            <div class="right mt-2"><span>RSD:</span><div id="slider-limit-value-max"></div></div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="col-lg-10 mx-auto border p-4 mt-3 checkbox">
+                                            <h2 class="grey-text lighten-2 mb-4">Promotivna ponuda</h2>
+                                            <form action="#" method="GET">
+                                                <p>
+                                                    <label>
+                                                    <input class="with-gap" name="group1" type="radio"  />
+                                                    <span>Novo</span>
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label>
+                                                    <input class="with-gap" name="group1" type="radio"  />
+                                                    <span>IT hit lista</span>
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label>
+                                                    <input class="with-gap" name="group1" type="radio"  />
+                                                    <span>Akcija</span>
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label>
+                                                    <input class="with-gap" name="group1" type="radio"  />
+                                                    <span>Rasprodaja</span>
+                                                    </label>
+                                                </p>
+                                            </form>
+                                        </div>
+                                        <div class="col-lg-10 mx-auto border p-4 mt-3">
+                                            <h2 class="grey-text lighten-2 mb-4">Velicina ekrana</h2>
+                                            <form action="#" method="GET">
+                                                <p>
+                                                    <label>
+                                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                                    <span>10 - 12 inča</span>
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label>
+                                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                                    <span>12.1 - 14.9 inča</span>
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label>
+                                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                                    <span>15 - 16.9 inča</span>
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label>
+                                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                                    <span>17 inča i više</span>
+                                                    </label>
+                                                </p>
+                                            </form>
+                                        </div>
+                                        <div class="col-lg-10 mx-auto border p-4 mt-3">
+                                            <h2 class="grey-text lighten-2 mb-4">Rezolucija</h2>
+                                            <form action="#" method="GET">
+                                                <p>
+                                                    <label>
+                                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                                    <span>1280x800</span>
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label>
+                                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                                    <span>1366x768</span>
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label>
+                                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                                    <span>1440x900</span>
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label>
+                                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                                    <span>1920x1080</span>
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label>
+                                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                                    <span>2560x1600</span>
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label>
+                                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                                    <span>3840x2160</span>
+                                                    </label>
+                                                </p>
+                                            </form>
+                                        </div>
+                                        <div class="col-lg-10 mx-auto border p-4 mt-3">
+                                            <h2 class="grey-text lighten-2 mb-4">Broj jezgara</h2>
+                                            <form action="#" method="GET">
+                                                <p>
+                                                    <label>
+                                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                                    <span>2 (Dual Core)</span>
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label>
+                                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                                    <span>4 (Quad Core)</span>
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label>
+                                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                                    <span>6 (Six Core)</span>
+                                                    </label>
+                                                </p>
+                                            </form>
+                                        </div>
+                                        <div class="col-lg-10 mx-auto border p-4 mt-3">
+                                            <h2 class="grey-text lighten-2 mb-4">Memorija</h2>
+                                            <form action="#" method="GET">
+                                                <p>
+                                                    <label>
+                                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                                    <span>2 GB</span>
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label>
+                                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                                    <span>4 GB</span>
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label>
+                                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                                    <span>6 GB</span>
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label>
+                                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                                    <span>8 GB</span>
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label>
+                                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                                    <span>16 GB i više</span>
+                                                    </label>
+                                                </p>
+                                            </form>
+                                        </div>
+                                        <div class="col-lg-10 mx-auto border p-4 mt-3">
+                                            <h2 class="grey-text lighten-2 mb-4">Vrsta diska</h2>
+                                            <form action="#" method="GET">
+                                                <p>
+                                                    <label>
+                                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                                    <span>HDD</span>
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label>
+                                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                                    <span>SSD</span>
+                                                    </label>
+                                                </p>
+                                            </form>
+                                        </div> 
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-10 mx-auto border p-4 mt-2 d-none d-lg-block">
+                            <h2 class="grey-text lighten-2 mb-4">Cena</h2>
+                            <div id="slider-limit 2"></div>
+                            <div class="left mt-2"><span>RSD:</span><div id="slider-limit-value-min 2"></div></div>
+                            <div class="right mt-2"><span>RSD:</span><div id="slider-limit-value-max 2"></div></div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-lg-10 mx-auto border p-4 mt-3 checkbox d-none d-lg-block">
+                            <h2 class="grey-text lighten-2 mb-4">Promotivna ponuda</h2>
+                            <form action="#" method="GET">
+                                <p>
+                                    <label>
+                                    <input class="with-gap" name="group1" type="radio"  />
+                                    <span>Novo</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="with-gap" name="group1" type="radio"  />
+                                    <span>IT hit lista</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="with-gap" name="group1" type="radio"  />
+                                    <span>Akcija</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="with-gap" name="group1" type="radio"  />
+                                    <span>Rasprodaja</span>
+                                    </label>
+                                </p>
+                            </form>
+                        </div>
+                        <div class="col-lg-10 mx-auto border p-4 mt-3 d-none d-lg-block">
+                            <h2 class="grey-text lighten-2 mb-4">Velicina ekrana</h2>
+                            <form action="#" method="GET">
+                                <p>
+                                    <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>10 - 12 inča</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>12.1 - 14.9 inča</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>15 - 16.9 inča</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>17 inča i više</span>
+                                    </label>
+                                </p>
+                            </form>
+                        </div>
+                        <div class="col-lg-10 mx-auto border p-4 mt-3 d-none d-lg-block">
+                            <h2 class="grey-text lighten-2 mb-4">Rezolucija</h2>
+                            <form action="#" method="GET">
+                                <p>
+                                    <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>1280x800</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>1366x768</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>1440x900</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>1920x1080</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>2560x1600</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>3840x2160</span>
+                                    </label>
+                                </p>
+                            </form>
+                        </div>
+                        <div class="col-lg-10 mx-auto border p-4 mt-3 d-none d-lg-block">
+                            <h2 class="grey-text lighten-2 mb-4">Broj jezgara</h2>
+                            <form action="#" method="GET">
+                                <p>
+                                    <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>2 (Dual Core)</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>4 (Quad Core)</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>6 (Six Core)</span>
+                                    </label>
+                                </p>
+                            </form>
+                        </div>
+                        <div class="col-lg-10 mx-auto border p-4 mt-3 d-none d-lg-block">
+                            <h2 class="grey-text lighten-2 mb-4">Memorija</h2>
+                            <form action="#" method="GET">
+                                <p>
+                                    <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>2 GB</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>4 GB</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>6 GB</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>8 GB</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>16 GB i više</span>
+                                    </label>
+                                </p>
+                            </form>
+                        </div>
+                        <div class="col-lg-10 mx-auto border p-4 mt-3 d-none d-lg-block">
+                            <h2 class="grey-text lighten-2 mb-4">Vrsta diska</h2>
+                            <form action="#" method="GET">
+                                <p>
+                                    <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>HDD</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>SSD</span>
+                                    </label>
+                                </p>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/dell2.png" alt="DELL Vostro 3581 - NOT13413"/>
-                    </div>
-                    <div class="card-content">
-                        <p class="card-title activator grey-text text-darken-4">DELL Vostro 3581 - NOT13413<i class="material-icons right">more_vert</i></p>
-                        <h3>RSD 45.500,00</h3>
-                        <a class="waves-effect waves-light blue lighten-1 btn white-text" href="#">Kupi</a>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">DELL Vostro 3581 - NOT13413<i class="material-icons right">close</i></span>
-                        <span class="font-weight-bold">Model procesora:</span>
-                        <p>Intel&reg; Core™ i3 7020U...</p>
-                        <span class="font-weight-bold mt-2">Dijagonala ekrana:</span>
-                        <p>14&quot;</p>
-                        <span class="font-weight-bold mt-2">HDD:</span>
-                        <p>1TB HDD</p>
-                        <span class="font-weight-bold mt-2">RAM memorija:</span>
-                        <p>4GB</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/dell3.png" alt="DELL Inspiron 15 5570 - NOT12843"/>
-                    </div>
-                    <div class="card-content">
-                        <p class="card-title activator grey-text text-darken-4">DELL Inspiron 15 5570 - NOT12843<i class="material-icons right">more_vert</i></p>
-                        <h3>RSD 56.800,00</h3>
-                        <a class="waves-effect waves-light blue lighten-1 btn white-text" href="#">Kupi</a>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">DELL Inspiron 15 5570 - NOT12843<i class="material-icons right">close</i></span>
-                        <span class="font-weight-bold">Model procesora:</span>
-                        <p>Intel&reg; Core™ i3 7020U...</p>
-                        <span class="font-weight-bold mt-2">Dijagonala ekrana:</span>
-                        <p>14&quot;</p>
-                        <span class="font-weight-bold mt-2">HDD:</span>
-                        <p>1TB HDD</p>
-                        <span class="font-weight-bold mt-2">RAM memorija:</span>
-                        <p>4GB</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/dell4.png" alt="DELL Inspiron 15 3583 - NOT13546"/>
-                    </div>
-                    <div class="card-content">
-                        <p class="card-title activator grey-text text-darken-4">DELL Inspiron 15 3583 - NOT13546<i class="material-icons right">more_vert</i></p>
-                        <h3>RSD 62.000,00</h3>
-                        <a class="waves-effect waves-light blue lighten-1 btn white-text" href="#">Kupi</a>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">DELL Inspiron 15 3583 - NOT13546<i class="material-icons right">close</i></span>
-                        <span class="font-weight-bold">Model procesora:</span>
-                        <p>Intel&reg; Core™ i3 8145U...</p>
-                        <span class="font-weight-bold mt-2">Dijagonala ekrana:</span>
-                        <p>15.6&quot;</p>
-                        <span class="font-weight-bold mt-2">HDD:</span>
-                        <p>256GB SSD</p>
-                        <span class="font-weight-bold mt-2">RAM memorija:</span>
-                        <p>8GB</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/dell5.png" alt="DELL Vostro 15 3580 - NOT13409"/>
-                    </div>
-                    <div class="card-content">
-                        <p class="card-title activator grey-text text-darken-4">DELL Vostro 15 3580 - NOT13409<i class="material-icons right">more_vert</i></p>
-                        <h3>RSD 62.000,00</h3>
-                        <a class="waves-effect waves-light blue lighten-1 btn white-text" href="#">Kupi</a>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">DELL Vostro 15 3580 - NOT13409<i class="material-icons right">close</i></span>
-                        <span class="font-weight-bold">Model procesora:</span>
-                        <p>Intel&reg; Core™ i5 8265U...</p>
-                        <span class="font-weight-bold mt-2">Dijagonala ekrana:</span>
-                        <p>15.6&quot;</p>
-                        <span class="font-weight-bold mt-2">HDD:</span>
-                        <p>1TB HDD</p>
-                        <span class="font-weight-bold mt-2">RAM memorija:</span>
-                        <p>8GB</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/dell6.png" alt="DELL Inspiron 15 5570 - NOT12397"/>
-                    </div>
-                    <div class="card-content">
-                        <p class="card-title activator grey-text text-darken-4">DELL Inspiron 15 5570 - NOT12397<i class="material-icons right">more_vert</i></p>
-                        <h3>RSD 78.500,00</h3>
-                        <a class="waves-effect waves-light blue lighten-1 btn white-text" href="#">Kupi</a>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">DELL Inspiron 15 5570 - NOT12397<i class="material-icons right">close</i></span>
-                        <span class="font-weight-bold">Model procesora:</span>
-                        <p>Intel&reg; Core™ i5 8250U...</p>
-                        <span class="font-weight-bold mt-2">Dijagonala ekrana:</span>
-                        <p>15.6&quot;</p>
-                        <span class="font-weight-bold mt-2">HDD:</span>
-                        <p>256GB SSD</p>
-                        <span class="font-weight-bold mt-2">RAM memorija:</span>
-                        <p>8GB</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/dell7.png" alt="DELL Inspiron 15 5570 - NOT13152"/>
-                    </div>
-                    <div class="card-content">
-                        <p class="card-title activator grey-text text-darken-4">DELL Inspiron 15 5570 - NOT13152<i class="material-icons right">more_vert</i></p>
-                        <h3>RSD 87.800,00</h3>
-                        <a class="waves-effect waves-light blue lighten-1 btn white-text" href="#">Kupi</a>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">DELL Inspiron 15 5570 (Beli) - NOT13152<i class="material-icons right">close</i></span>
-                        <span class="font-weight-bold">Model procesora:</span>
-                        <p>Intel&reg; Core™ i7 8550U...</p>
-                        <span class="font-weight-bold mt-2">Dijagonala ekrana:</span>
-                        <p>15.6&quot;</p>
-                        <span class="font-weight-bold mt-2">HDD:</span>
-                        <p>256GB SSD</p>
-                        <span class="font-weight-bold mt-2">RAM memorija:</span>
-                        <p>8GB</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/dell8.png" alt="DELL Inspiron 15 5570 - NOT12392"/>
-                    </div>
-                    <div class="card-content">
-                        <p class="card-title activator grey-text text-darken-4">DELL Inspiron 15 5570 - NOT12392<i class="material-icons right">more_vert</i></p>
-                        <h3>RSD 79.300,00</h3>
-                        <a class="waves-effect waves-light blue lighten-1 btn white-text" href="#">Kupi</a>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">DELL Inspiron 15 5570 - NOT12392<i class="material-icons right">close</i></span>
-                        <span class="font-weight-bold">Model procesora:</span>
-                        <p>Intel&reg; Core™ i5 8250U...</p>
-                        <span class="font-weight-bold mt-2">Dijagonala ekrana:</span>
-                        <p>15.6&quot;</p>
-                        <span class="font-weight-bold mt-2">HDD:</span>
-                        <p>256GB SSD</p>
-                        <span class="font-weight-bold mt-2">RAM memorija:</span>
-                        <p>8GB</p>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-12 mx-auto">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="images/dell1.png" alt="DELL Inspiron 14 5482 - NOT13036"/>
+                                </div>
+                                <div class="card-content">
+                                    <p class="card-title activator grey-text text-darken-4">DELL Inspiron 14 5482 - NOT13036<i class="material-icons right">more_vert</i></p>
+                                    <h3>RSD 99.500,00</h3>
+                                    <a class="waves-effect waves-light blue lighten-1 btn white-text" href="#">Kupi</a>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">DELL Inspiron 14 5482 - NOT13036<i class="material-icons right">close</i></span>
+                                    <span class="font-weight-bold">Model procesora:</span>
+                                    <p>Intel&reg; Core™ i5 8265U...</p>
+                                    <span class="font-weight-bold mt-2">Dijagonala ekrana:</span>
+                                    <p>14&quot;</p>
+                                    <span class="font-weight-bold mt-2">HDD:</span>
+                                    <p>256GB SSD</p>
+                                    <span class="font-weight-bold mt-2">RAM memorija:</span>
+                                    <p>8GB</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-12 mx-auto">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="images/dell2.png" alt="DELL Vostro 3581 - NOT13413"/>
+                                </div>
+                                <div class="card-content">
+                                    <p class="card-title activator grey-text text-darken-4">DELL Vostro 3581 - NOT13413<i class="material-icons right">more_vert</i></p>
+                                    <h3>RSD 45.500,00</h3>
+                                    <a class="waves-effect waves-light blue lighten-1 btn white-text" href="#">Kupi</a>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">DELL Vostro 3581 - NOT13413<i class="material-icons right">close</i></span>
+                                    <span class="font-weight-bold">Model procesora:</span>
+                                    <p>Intel&reg; Core™ i3 7020U...</p>
+                                    <span class="font-weight-bold mt-2">Dijagonala ekrana:</span>
+                                    <p>14&quot;</p>
+                                    <span class="font-weight-bold mt-2">HDD:</span>
+                                    <p>1TB HDD</p>
+                                    <span class="font-weight-bold mt-2">RAM memorija:</span>
+                                    <p>4GB</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-12 mx-auto">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="images/dell3.png" alt="DELL Inspiron 15 5570 - NOT12843"/>
+                                </div>
+                                <div class="card-content">
+                                    <p class="card-title activator grey-text text-darken-4">DELL Inspiron 15 5570 - NOT12843<i class="material-icons right">more_vert</i></p>
+                                    <h3>RSD 56.800,00</h3>
+                                    <a class="waves-effect waves-light blue lighten-1 btn white-text" href="#">Kupi</a>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">DELL Inspiron 15 5570 - NOT12843<i class="material-icons right">close</i></span>
+                                    <span class="font-weight-bold">Model procesora:</span>
+                                    <p>Intel&reg; Core™ i3 7020U...</p>
+                                    <span class="font-weight-bold mt-2">Dijagonala ekrana:</span>
+                                    <p>14&quot;</p>
+                                    <span class="font-weight-bold mt-2">HDD:</span>
+                                    <p>1TB HDD</p>
+                                    <span class="font-weight-bold mt-2">RAM memorija:</span>
+                                    <p>4GB</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-12 mx-auto">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="images/dell4.png" alt="DELL Inspiron 15 3583 - NOT13546"/>
+                                </div>
+                                <div class="card-content">
+                                    <p class="card-title activator grey-text text-darken-4">DELL Inspiron 15 3583 - NOT13546<i class="material-icons right">more_vert</i></p>
+                                    <h3>RSD 62.000,00</h3>
+                                    <a class="waves-effect waves-light blue lighten-1 btn white-text" href="#">Kupi</a>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">DELL Inspiron 15 3583 - NOT13546<i class="material-icons right">close</i></span>
+                                    <span class="font-weight-bold">Model procesora:</span>
+                                    <p>Intel&reg; Core™ i3 8145U...</p>
+                                    <span class="font-weight-bold mt-2">Dijagonala ekrana:</span>
+                                    <p>15.6&quot;</p>
+                                    <span class="font-weight-bold mt-2">HDD:</span>
+                                    <p>256GB SSD</p>
+                                    <span class="font-weight-bold mt-2">RAM memorija:</span>
+                                    <p>8GB</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-12 mx-auto">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="images/dell5.png" alt="DELL Vostro 15 3580 - NOT13409"/>
+                                </div>
+                                <div class="card-content">
+                                    <p class="card-title activator grey-text text-darken-4">DELL Vostro 15 3580 - NOT13409<i class="material-icons right">more_vert</i></p>
+                                    <h3>RSD 62.000,00</h3>
+                                    <a class="waves-effect waves-light blue lighten-1 btn white-text" href="#">Kupi</a>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">DELL Vostro 15 3580 - NOT13409<i class="material-icons right">close</i></span>
+                                    <span class="font-weight-bold">Model procesora:</span>
+                                    <p>Intel&reg; Core™ i5 8265U...</p>
+                                    <span class="font-weight-bold mt-2">Dijagonala ekrana:</span>
+                                    <p>15.6&quot;</p>
+                                    <span class="font-weight-bold mt-2">HDD:</span>
+                                    <p>1TB HDD</p>
+                                    <span class="font-weight-bold mt-2">RAM memorija:</span>
+                                    <p>8GB</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-12 mx-auto">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="images/dell6.png" alt="DELL Inspiron 15 5570 - NOT12397"/>
+                                </div>
+                                <div class="card-content">
+                                    <p class="card-title activator grey-text text-darken-4">DELL Inspiron 15 5570 - NOT12397<i class="material-icons right">more_vert</i></p>
+                                    <h3>RSD 78.500,00</h3>
+                                    <a class="waves-effect waves-light blue lighten-1 btn white-text" href="#">Kupi</a>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">DELL Inspiron 15 5570 - NOT12397<i class="material-icons right">close</i></span>
+                                    <span class="font-weight-bold">Model procesora:</span>
+                                    <p>Intel&reg; Core™ i5 8250U...</p>
+                                    <span class="font-weight-bold mt-2">Dijagonala ekrana:</span>
+                                    <p>15.6&quot;</p>
+                                    <span class="font-weight-bold mt-2">HDD:</span>
+                                    <p>256GB SSD</p>
+                                    <span class="font-weight-bold mt-2">RAM memorija:</span>
+                                    <p>8GB</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-12 mx-auto">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="images/dell7.png" alt="DELL Inspiron 15 5570 - NOT13152"/>
+                                </div>
+                                <div class="card-content">
+                                    <p class="card-title activator grey-text text-darken-4">DELL Inspiron 15 5570 - NOT13152<i class="material-icons right">more_vert</i></p>
+                                    <h3>RSD 87.800,00</h3>
+                                    <a class="waves-effect waves-light blue lighten-1 btn white-text" href="#">Kupi</a>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">DELL Inspiron 15 5570 (Beli) - NOT13152<i class="material-icons right">close</i></span>
+                                    <span class="font-weight-bold">Model procesora:</span>
+                                    <p>Intel&reg; Core™ i7 8550U...</p>
+                                    <span class="font-weight-bold mt-2">Dijagonala ekrana:</span>
+                                    <p>15.6&quot;</p>
+                                    <span class="font-weight-bold mt-2">HDD:</span>
+                                    <p>256GB SSD</p>
+                                    <span class="font-weight-bold mt-2">RAM memorija:</span>
+                                    <p>8GB</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-12 mx-auto">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="images/dell8.png" alt="DELL Inspiron 15 5570 - NOT12392"/>
+                                </div>
+                                <div class="card-content">
+                                    <p class="card-title activator grey-text text-darken-4">DELL Inspiron 15 5570 - NOT12392<i class="material-icons right">more_vert</i></p>
+                                    <h3>RSD 79.300,00</h3>
+                                    <a class="waves-effect waves-light blue lighten-1 btn white-text" href="#">Kupi</a>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">DELL Inspiron 15 5570 - NOT12392<i class="material-icons right">close</i></span>
+                                    <span class="font-weight-bold">Model procesora:</span>
+                                    <p>Intel&reg; Core™ i5 8250U...</p>
+                                    <span class="font-weight-bold mt-2">Dijagonala ekrana:</span>
+                                    <p>15.6&quot;</p>
+                                    <span class="font-weight-bold mt-2">HDD:</span>
+                                    <p>256GB SSD</p>
+                                    <span class="font-weight-bold mt-2">RAM memorija:</span>
+                                    <p>8GB</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -313,6 +688,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.1/nouislider.min.js"></script>
     <script src="js/script.js"></script>   
 </body>
 </html>
