@@ -48,6 +48,13 @@ a:hover{
 .modali a:hover, .dmeni a:hover{
     color: #0d47a1;
 }
+input:focus, textarea:focus{
+    border-bottom-color:#0d47a1 !important;
+    box-shadow: 0 1px 0 0 #0d47a1 !important;
+}
+label{
+    color: #0d47a1 !important;
+}
 .naslov{
     bottom: 30%;
     left: 10%;
