@@ -69,7 +69,7 @@ a:hover{
 }
 .korpa{
     float:right;
-    width: 30%;
+    width: 200px;
     padding: 8px;
     border-radius: 20px;
     color: #fff; 
@@ -92,5 +92,8 @@ a:hover{
     }  
     .slajder{
         height: 450px !important;
+    }
+    .tabela td:nth-child(even){
+        text-align: right;
     }
 }
