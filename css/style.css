@@ -20,22 +20,12 @@ a:hover{
 .position{
     top: 50% !important;
 }
-#pozslika, #pozasus, #pozdell, #pozhp{
-    height: 400px;
+#pozslika{
+    height: 450px;
     background-image: url(../images/pozslika.jpg);
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: center;
-}
-#pozasus{
-    background-image: url(../images/asus.jpg);
-}
-#pozdell{
-    background-image: url(../images/dell.jpeg);
-    height: 500px;
-}
-#pozhp{
-    background-image: url(../images/hp.jpg);
 }
 .modali{
     width: 40%;
@@ -65,10 +55,24 @@ a:hover{
     border: 2px solid #0d47a1 !important;
     background-color: #0d47a1 !important;
 }
-.naslov{
-    bottom: 30%;
-    left: 10%;
-    line-height: 1.7;
+.fa-star{
+    color: #e9d700;
+}
+.fa-star:hover{
+    color: #f8ed62;
+}
+.proizvod ul{
+    line-height: 1.8;
+}
+.proizvod h3{
+    font-size: 20px;
+}
+.korpa{
+    float:right;
+    width: 30%;
+    padding: 8px;
+    border-radius: 20px;
+    color: #fff; 
 }
 .footer{
     margin-bottom: 0px;
@@ -86,17 +90,6 @@ a:hover{
     .position{
         top: 25% !important;
     }  
-    #pozdell{
-        background-position: right;
-    }
-    .naslov{
-        bottom: 20%;
-        left: 0%;
-    }
-    .logo{
-        width: 60%;
-        text-align: center;
-    }
     .slajder{
         height: 450px !important;
     }
