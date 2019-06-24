@@ -2,38 +2,182 @@
 	<urlset xmlns="http://www.sitmaps.org/schemas/sitemap/0.9">
 		<url>
 			<loc>https://nemanja13.github.io/laptopshop/index.html</loc>
-			<lastmod>2019-6-13</lastmod>
+			<lastmod>2019-6-25</lastmod>
 			<changefreq>weekly</changefreq>
 			<priority>1</priority>
 		</url>
 		<url>
 			<loc>https://nemanja13.github.io/laptopshop/asus.html</loc>
-			<lastmod>2019-6-13</lastmod>
+			<lastmod>2019-6-25</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>0.8</priority>
 		</url>
 		<url>
 			<loc>https://nemanja13.github.io/laptopshop/dell.html</loc>
-			<lastmod>2019-6-13</lastmod>
+			<lastmod>2019-6-25</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>0.8</priority>
 		</url>
 		<url>
 			<loc>https://nemanja13.github.io/laptopshop/hp.html</loc>
-			<lastmod>2019-6-13</lastmod>
+			<lastmod>2019-6-25</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>0.8</priority>
 		</url>
 		<url>
 			<loc>https://nemanja13.github.io/laptopshop/kontakt.html</loc>
-			<lastmod>2019-6-13</lastmod>
+			<lastmod>2019-6-25</lastmod>
 			<changefreq>yearly</changefreq>
 			<priority>0.6</priority>
 		</url>
 		<url>
 			<loc>https://nemanja13.github.io/laptopshop/oAutoru.html</loc>
-			<lastmod>2019-6-13</lastmod>
+			<lastmod>2019-6-25</lastmod>
 			<changefreq>yearly</changefreq>
 			<priority>0.6</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/asus1.html</loc>
+			<lastmod>2019-6-25</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.5</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/asus2.html</loc>
+			<lastmod>2019-6-25</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.5</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/asus3.html</loc>
+			<lastmod>2019-6-25</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.5</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/asus4.html</loc>
+			<lastmod>2019-6-25</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.5</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/asus5.html</loc>
+			<lastmod>2019-6-25</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.5</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/asus6.html</loc>
+			<lastmod>2019-6-25</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.5</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/asus7.html</loc>
+			<lastmod>2019-6-25</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.5</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/asus8.html</loc>
+			<lastmod>2019-6-25</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.5</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/dell1.html</loc>
+			<lastmod>2019-6-25</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.5</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/dell2.html</loc>
+			<lastmod>2019-6-25</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.5</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/dell3.html</loc>
+			<lastmod>2019-6-25</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.5</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/dell4.html</loc>
+			<lastmod>2019-6-25</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.5</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/dell5.html</loc>
+			<lastmod>2019-6-25</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.5</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/dell6.html</loc>
+			<lastmod>2019-6-25</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.5</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/dell7.html</loc>
+			<lastmod>2019-6-25</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.5</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/dell8.html</loc>
+			<lastmod>2019-6-25</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.5</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/hp1.html</loc>
+			<lastmod>2019-6-25</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.5</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/hp2.html</loc>
+			<lastmod>2019-6-25</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.5</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/hp3.html</loc>
+			<lastmod>2019-6-25</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.5</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/hp4.html</loc>
+			<lastmod>2019-6-25</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.5</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/hp5.html</loc>
+			<lastmod>2019-6-25</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.5</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/hp6.html</loc>
+			<lastmod>2019-6-25</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.5</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/hp7.html</loc>
+			<lastmod>2019-6-25</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.5</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/laptopshop/hp8.html</loc>
+			<lastmod>2019-6-25</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.5</priority>
 		</url>
 	</urlset>
