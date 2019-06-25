@@ -99,4 +99,7 @@ a:hover{
     .tabela td:nth-child(even){
         text-align: right;
     }
+    .logo{
+        width: 60%;
+    }
 }
