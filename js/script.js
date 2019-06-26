@@ -5,7 +5,10 @@ $(document).ready(function(){
     $('.sidenav').sidenav();
 });
 $(document).ready(function(){
-    $('.slider').slider();
+    $('.slider').slider({
+        indicators: false
+    });
+   
 });
 $(document).ready(function(){
     $('.modal').modal();
